@@ -1,6 +1,289 @@
 [
     {
         "info": {
+            "title": "Ban Wave",
+            "description": "",
+            "thumbnail": ""
+        },
+        "blocks": [
+            {
+                "name": "get_server_info",
+                "info": {
+                    "x": 1120,
+                    "y": 489,
+                    "z": 1,
+                    "color": "#5a5a5a",
+                    "height": 114.5,
+                    "width": 621
+                },
+                "inputs": {
+                    "action": "hGWCdb0Xzz",
+                    "server": "pFVZLaA6Ou"
+                },
+                "options": {
+                    "server_info": "22"
+                },
+                "outputs": {
+                    "action": [
+                        "uxv9ZQ4lL5"
+                    ],
+                    "result": [
+                        "JJOBye0OxE"
+                    ]
+                }
+            },
+            {
+                "name": "loop_list",
+                "info": {
+                    "x": 1779,
+                    "y": 487,
+                    "z": 2,
+                    "color": "#5a5a5a",
+                    "height": 167.5,
+                    "width": 276
+                },
+                "inputs": {
+                    "action": "uxv9ZQ4lL5",
+                    "list": "JJOBye0OxE"
+                },
+                "outputs": {
+                    "action": [
+                        "pFwwQP2W5D"
+                    ],
+                    "index": [],
+                    "value": [
+                        "36RUku4wA0"
+                    ]
+                }
+            },
+            {
+                "name": "ban_user",
+                "info": {
+                    "x": 2106,
+                    "y": 482,
+                    "z": 3,
+                    "color": "#5a5a5a",
+                    "height": 379.5,
+                    "width": 276
+                },
+                "inputs": {
+                    "action": "pFwwQP2W5D",
+                    "server": "Op9JIa3sZn",
+                    "target": "36RUku4wA0",
+                    "delete_user_message_history": "3vYXJrhPBh",
+                    "time": "uFVtzTmMl5",
+                    "reason1": "qjfRfnvi2e",
+                    "reason2": "sFduNNle6m"
+                },
+                "outputs": {
+                    "action": []
+                }
+            },
+            {
+                "name": "command_event_with_text",
+                "info": {
+                    "x": 277,
+                    "y": 60,
+                    "z": 4,
+                    "color": "#5a5a5a",
+                    "height": 406.5,
+                    "width": 759
+                },
+                "inputs": {
+                    "command_slowmode": "zkpBrV0V91"
+                },
+                "options": {
+                    "command_name": "banwave",
+                    "custom_prefix": "",
+                    "command_restriction": "server_only",
+                    "required_member_permission": "none",
+                    "case_sensitive": "no",
+                    "command_slowmode_restriction": "none"
+                },
+                "outputs": {
+                    "action1": [
+                        "PSnHMEPjnI"
+                    ],
+                    "action2": [],
+                    "message": [
+                        "ze2Ms8eRLQ"
+                    ],
+                    "channel": [],
+                    "user": [],
+                    "error_message": []
+                }
+            },
+            {
+                "name": "get_message_info",
+                "info": {
+                    "x": 1059,
+                    "y": 261,
+                    "z": 5,
+                    "color": "#5a5a5a",
+                    "height": 114.5,
+                    "width": 653
+                },
+                "inputs": {
+                    "action": "PSnHMEPjnI",
+                    "message": "ze2Ms8eRLQ"
+                },
+                "options": {
+                    "message_info": "13"
+                },
+                "outputs": {
+                    "action": [
+                        "hGWCdb0Xzz"
+                    ],
+                    "result": [
+                        "pFVZLaA6Ou",
+                        "Op9JIa3sZn"
+                    ]
+                }
+            }
+        ],
+        "notes": []
+    },
+    {
+        "info": {
+            "title": "Counter-Unban Module",
+            "description": "",
+            "thumbnail": ""
+        },
+        "blocks": [
+            {
+                "name": "server_ban_remove_event",
+                "info": {
+                    "x": 95,
+                    "y": 202,
+                    "z": 1,
+                    "color": "#5a5a5a",
+                    "height": 252,
+                    "width": 393
+                },
+                "options": {
+                    "unstable_outputs": "no"
+                },
+                "outputs": {
+                    "action": [
+                        "CSAFUof4BK"
+                    ],
+                    "server": [
+                        "J5Dm7y3x8D"
+                    ],
+                    "user": [
+                        "nytJ0BJYQF"
+                    ],
+                    "punisher": [],
+                    "reason": []
+                }
+            },
+            {
+                "name": "ban_user",
+                "info": {
+                    "x": 578,
+                    "y": 202,
+                    "z": 2,
+                    "color": "#5a5a5a",
+                    "height": 379.5,
+                    "width": 275
+                },
+                "inputs": {
+                    "action": "CSAFUof4BK",
+                    "server": "J5Dm7y3x8D",
+                    "target": "nytJ0BJYQF",
+                    "delete_user_message_history": "vc46Lu3jLQ",
+                    "time": "nyA0QQQJez",
+                    "reason1": "OZ1hjf1C70",
+                    "reason2": "ItWz9m8OEw"
+                },
+                "outputs": {
+                    "action": []
+                }
+            }
+        ],
+        "notes": []
+    },
+    {
+        "info": {
+            "title": "Server Auto Lockdown",
+            "description": "",
+            "thumbnail": ""
+        },
+        "blocks": [
+            {
+                "name": "member_join_server_event",
+                "info": {
+                    "x": 40,
+                    "y": 131,
+                    "z": 3,
+                    "color": "#5a5a5a",
+                    "height": 114.5,
+                    "width": 265
+                },
+                "outputs": {
+                    "action": [
+                        "VGTYNMH2FO"
+                    ],
+                    "member": [
+                        "28sZcXZ1ds",
+                        "wLAh0xhSc5"
+                    ]
+                }
+            },
+            {
+                "name": "ban_user",
+                "info": {
+                    "x": 1153,
+                    "y": 136,
+                    "z": 4,
+                    "color": "#5a5a5a",
+                    "height": 379.5,
+                    "width": 275
+                },
+                "inputs": {
+                    "action": "5PNqkli0i5",
+                    "server": "gjMxBV7qKa",
+                    "target": "wLAh0xhSc5",
+                    "delete_user_message_history": "UY9KcRh43G",
+                    "time": "zfRccb1esC",
+                    "reason1": "Bq7bT3N42w",
+                    "reason2": "YfT69nXMjQ"
+                },
+                "outputs": {
+                    "action": []
+                }
+            },
+            {
+                "name": "get_member_info",
+                "info": {
+                    "x": 378,
+                    "y": 136,
+                    "z": 5,
+                    "color": "#5a5a5a",
+                    "height": 114.5,
+                    "width": 739
+                },
+                "inputs": {
+                    "action": "VGTYNMH2FO",
+                    "member": "28sZcXZ1ds"
+                },
+                "options": {
+                    "member_info": "8"
+                },
+                "outputs": {
+                    "action": [
+                        "5PNqkli0i5"
+                    ],
+                    "result": [
+                        "gjMxBV7qKa"
+                    ]
+                }
+            }
+        ],
+        "notes": []
+    },
+    {
+        "info": {
             "title": "Ban",
             "description": "",
             "thumbnail": ""
@@ -20,7 +303,7 @@
                     "command_slowmode": "YVvPDGcDpR"
                 },
                 "options": {
-                    "command_name": "Ban",
+                    "command_name": "nukeban",
                     "custom_prefix": "",
                     "command_restriction": "none",
                     "required_member_permission": "none",
@@ -37,7 +320,9 @@
                         "MD6qGGlMbM"
                     ],
                     "channel": [],
-                    "user": [],
+                    "user": [
+                        "5h7xiYhvtJ"
+                    ],
                     "error_message": []
                 }
             },
@@ -61,7 +346,9 @@
                     "reason2": "hMx8t2FoFA"
                 },
                 "outputs": {
-                    "action": []
+                    "action": [
+                        "ovQyvWvq3Q"
+                    ]
                 }
             },
             {
@@ -116,6 +403,62 @@
                     "result": [
                         "vsKnfAcEcH"
                     ]
+                }
+            },
+            {
+                "name": "get_user_info",
+                "info": {
+                    "x": 2737,
+                    "y": 687,
+                    "z": 5,
+                    "color": "#5a5a5a",
+                    "height": 114.5,
+                    "width": 543
+                },
+                "inputs": {
+                    "action": "ovQyvWvq3Q",
+                    "user": "5h7xiYhvtJ"
+                },
+                "options": {
+                    "user_info": "8"
+                },
+                "outputs": {
+                    "action": [
+                        "3ImwNP74bd"
+                    ],
+                    "result": [
+                        "VmbUhg6P8F"
+                    ]
+                }
+            },
+            {
+                "name": "Chad_send_message",
+                "info": {
+                    "x": 3290,
+                    "y": 686,
+                    "z": 6,
+                    "color": "#5a5a5a",
+                    "height": 303.5,
+                    "width": 463
+                },
+                "inputs": {
+                    "action": "3ImwNP74bd",
+                    "channel": "VmbUhg6P8F",
+                    "embed": "pl3QSdni1t",
+                    "attachment": "p6fukYf4yd",
+                    "text1": "Iqt1OICVcY",
+                    "text2": "YkzH6CwE2V",
+                    "text3": "za6oD9lodT",
+                    "text4": "wuYlTOguPM"
+                },
+                "options": {
+                    "TTS": "false",
+                    "smsg": "true",
+                    "text": "Ez Ban My Man"
+                },
+                "outputs": {
+                    "action": [],
+                    "message": []
                 }
             }
         ],
