@@ -1,0 +1,124 @@
+[
+    {
+        "info": {
+            "title": "Ban",
+            "description": "",
+            "thumbnail": ""
+        },
+        "blocks": [
+            {
+                "name": "command_event_with_text",
+                "info": {
+                    "x": 964,
+                    "y": 304,
+                    "z": 1,
+                    "color": "#5a5a5a",
+                    "height": 406.5,
+                    "width": 759
+                },
+                "inputs": {
+                    "command_slowmode": "YVvPDGcDpR"
+                },
+                "options": {
+                    "command_name": "Ban",
+                    "custom_prefix": "",
+                    "command_restriction": "none",
+                    "required_member_permission": "none",
+                    "case_sensitive": "no",
+                    "command_slowmode_restriction": "channel"
+                },
+                "outputs": {
+                    "action1": [
+                        "AylaECPbVr"
+                    ],
+                    "action2": [],
+                    "message": [
+                        "f2iTGMny2a",
+                        "MD6qGGlMbM"
+                    ],
+                    "channel": [],
+                    "user": [],
+                    "error_message": []
+                }
+            },
+            {
+                "name": "ban_user",
+                "info": {
+                    "x": 2437,
+                    "y": 390,
+                    "z": 2,
+                    "color": "#5a5a5a",
+                    "height": 379.5,
+                    "width": 275
+                },
+                "inputs": {
+                    "action": "5D6cR1cdum",
+                    "server": "pAaAzLGmoU",
+                    "target": "vsKnfAcEcH",
+                    "delete_user_message_history": "osFWqXGACz",
+                    "time": "YuNR4biauD",
+                    "reason1": "BznSBsXoUZ",
+                    "reason2": "hMx8t2FoFA"
+                },
+                "outputs": {
+                    "action": []
+                }
+            },
+            {
+                "name": "get_message_info",
+                "info": {
+                    "x": 1755,
+                    "y": 391,
+                    "z": 3,
+                    "color": "#5a5a5a",
+                    "height": 114.5,
+                    "width": 653
+                },
+                "inputs": {
+                    "action": "AylaECPbVr",
+                    "message": "f2iTGMny2a"
+                },
+                "options": {
+                    "message_info": "13"
+                },
+                "outputs": {
+                    "action": [
+                        "zMU4OZrwIl"
+                    ],
+                    "result": [
+                        "pAaAzLGmoU"
+                    ]
+                }
+            },
+            {
+                "name": "get_message_arguments",
+                "info": {
+                    "x": 1819,
+                    "y": 596,
+                    "z": 4,
+                    "color": "#5a5a5a",
+                    "height": 242,
+                    "width": 456
+                },
+                "inputs": {
+                    "action": "zMU4OZrwIl",
+                    "message": "MD6qGGlMbM",
+                    "argument_number": "ku9ceV5pp8",
+                    "custom_argument_separator": "F9UO0hqsLm"
+                },
+                "options": {
+                    "argument_type": "mentioned_member"
+                },
+                "outputs": {
+                    "action": [
+                        "5D6cR1cdum"
+                    ],
+                    "result": [
+                        "vsKnfAcEcH"
+                    ]
+                }
+            }
+        ],
+        "notes": []
+    }
+]
