@@ -4,12 +4,19 @@
             "main": "!",
             "servers": {}
         },
-        "owners": []
+        "owners": [
+            "820621292663341096"
+        ]
     },
     "discord": {
         "servers": {},
         "members": {},
-        "users": {}
+        "users": {
+            "491171358965891072": {
+                "money": 300,
+                "cooldowndaily": "2021-03-14T13:25:10.111Z"
+            }
+        }
     },
     "blocks": {},
     "custom": {}
